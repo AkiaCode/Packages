@@ -14,9 +14,6 @@ const info = async (name: string, searchParams: URLSearchParams) => {
         return ResponseJSON(await infoHex(name))
     } else if (searchParams.get('lang') === 'rust') {
         return ResponseJSON(await infoCrate(name))
-    } else if (searchParams.get('lang') === 'python') {
-        const json = await infoPypi(name)
-        return ResponseJSON(json.info)
     }
 
     return ResponseJSON({

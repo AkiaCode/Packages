@@ -1,5 +1,6 @@
 export const request = (url: string) => {
     return fetch(url, {
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json',
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
@@ -8,7 +9,7 @@ export const request = (url: string) => {
     .then((response: any) => response.json())
     .then((data: any) => {
             return data;
-    });
+    })
 }
 
 
