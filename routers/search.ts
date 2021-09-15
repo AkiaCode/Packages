@@ -1,7 +1,7 @@
-import { searchCrate } from '../pacakges/crates.io.ts'
-import { searchDeno } from '../pacakges/deno.ts'
-import { searchHex } from '../pacakges/hexpm.ts'
-import { searchNpm } from '../pacakges/npmjs.ts'
+import { searchCrate } from '../packages/crates.io.ts'
+import { searchDeno } from '../packages/deno.ts'
+import { searchHex } from '../packages/hexpm.ts'
+import { searchNpm } from '../packages/npmjs.ts'
 import { ResponseJSON } from '../util.ts'
 
 const search = async (name: string, searchParams: URLSearchParams) => {

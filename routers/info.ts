@@ -1,9 +1,9 @@
 import { ResponseJSON } from '../util.ts'
-import { infoDeno } from '../pacakges/deno.ts'
-import { infoNpm } from '../pacakges/npmjs.ts'
-import { infoHex } from '../pacakges/hexpm.ts'
-import { infoCrate } from '../pacakges/crates.io.ts'
-import { infoPypi } from '../pacakges/pypi.ts'
+import { infoDeno } from '../packages/deno.ts'
+import { infoNpm } from '../packages/npmjs.ts'
+import { infoHex } from '../packages/hexpm.ts'
+import { infoCrate } from '../packages/crates.io.ts'
+import { infoPypi } from '../packages/pypi.ts'
 
 const info = async (name: string, searchParams: URLSearchParams) => {
     if (searchParams.get('lang') === 'deno') {
